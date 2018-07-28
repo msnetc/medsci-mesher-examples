@@ -2,12 +2,8 @@ version:  '3'
 services:
   php-server:
     build: ./server
-    ports:
-     - 800:80
   php-client:
     build: ./client
-    ports:
-     - 900:80
     environment:
       http_proxy: http://127.0.0.1:30101
     network_mode: "service:mesher-consumer"
