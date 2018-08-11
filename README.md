@@ -6,7 +6,9 @@
    git clone https://github.com/msnetc/medsci-mesher-examples.git
 
 2. 创建 medsci/mesher镜像
+  
    cd medsci-mesher
+
    docker build -t medsci/mesher .
 
 3. 创建运行时容器
