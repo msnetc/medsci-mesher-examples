@@ -24,8 +24,9 @@
    ![图片alt](sccenter.png)
 
 
-6. 获取mesher客户端的ip地址, 例如图中的ip地址为172.19.0.2
+6. 获取mesher客户端的ip地址
    docker inspect php-mesher-example_mesher-consumer_1
+   图中的ip地址为172.19.0.2
    ![图片alt](ipaddress.png)
 
 7. 测试 curl http://172.19.0.2/client.php，返回10。成功。  
