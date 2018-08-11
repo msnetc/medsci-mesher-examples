@@ -5,19 +5,19 @@
 1. 获取示例代码
    git clone https://github.com/msnetc/medsci-mesher-examples.git
 
-1.创建 medsci/mesher镜像
+2.创建 medsci/mesher镜像
    cd medsci-mesher
    docker build -t medsci/mesher .   
-2.在注册中心查看注册的微服务。 
+3.在注册中心查看注册的微服务。 
    ![图片alt](sccenter.png)
-3. 创建运行时容器
+4. 创建运行时容器
   cd PHP-Mesher-Example/
   docker-compose up
-4. [container]!(container.png)
+5. [container]!(container.png)
   ![图片alt](container.png)
 
-5. 获取mesher客户端的ip地址, 例如图中的ip地址为172.19.0.2
+6. 获取mesher客户端的ip地址, 例如图中的ip地址为172.19.0.2
    docker inspect php-mesher-example_mesher-consumer_1
    ![图片alt](ipaddress.png)
 
-6.测试 curl http://172.19.0.2/client.php，返回10。成功。
+7.测试 curl http://172.19.0.2/client.php，返回10。成功。  
