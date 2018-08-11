@@ -7,12 +7,15 @@
 
 2. 创建 medsci/mesher镜像
    cd medsci-mesher
-   docker build -t medsci/mesher .   
-3. 在注册中心查看注册的微服务。 
-   ![图片alt](sccenter.png)
-4. 创建运行时容器
+   docker build -t medsci/mesher .
+
+3. 创建运行时容器
    cd PHP-Mesher-Example/
    docker-compose up
+
+4. 在注册中心查看注册的微服务
+   ![图片alt](sccenter.png)
+
 5. [container]!(container.png)
   ![图片alt](container.png)
 
