@@ -13,13 +13,16 @@
 
 3. 创建运行时容器
    cd PHP-Mesher-Example/
+
    docker-compose up
+
+   运行成功后的  docker ps
+  
+  ![图片alt](container.png)
 
 4. 在注册中心查看注册的微服务
    ![图片alt](sccenter.png)
 
-5. [container]!(container.png)
-  ![图片alt](container.png)
 
 6. 获取mesher客户端的ip地址, 例如图中的ip地址为172.19.0.2
    docker inspect php-mesher-example_mesher-consumer_1
