@@ -1,5 +1,4 @@
 # medsci-mesher-examples
- 华为mesher使用demo
  示例内容： php作为微服务的provider，然后注册到注册中心，然后php作为consumer访问访问这个服务。
 
 运行前提， 安装有docker和docker-compose，已经安装有注册中心.
