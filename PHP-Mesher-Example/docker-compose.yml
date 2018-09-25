@@ -20,6 +20,8 @@ services:
       - php-server
   mesher-consumer:
     image: 10.0.1.252:5000/paas/mesher:latest
+    ports:
+      - 81:80
     environment:
       CSE_REGISTRY_ADDR: http://10.0.1.252:30100
       SERVICE_NAME: "mesher-consumer"
