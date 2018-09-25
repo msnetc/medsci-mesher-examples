@@ -10,17 +10,17 @@ services:
     depends_on:
       - mesher-consumer
   mesher-provider:
-    image: medsci/mesher:latest
+    image: 10.0.1.252:5000/paas/mesher:latest
     environment:
-      CSE_REGISTRY_ADDR: http://176.122.130.202:30100
+      CSE_REGISTRY_ADDR: http://10.0.1.252:30100
       SPECIFIC_ADDR: 127.0.0.1:80
       SERVICE_NAME: "hellomesher"
     network_mode: "service:php-server"
     depends_on:
       - php-server
   mesher-consumer:
-    image: medsci/mesher:latest
+    image: 10.0.1.252:5000/paas/mesher:latest
     environment:
-      CSE_REGISTRY_ADDR: http://176.122.130.202:30100
+      CSE_REGISTRY_ADDR: http://10.0.1.252:30100
       SERVICE_NAME: "mesher-consumer"
 
